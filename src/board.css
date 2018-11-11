@@ -1,0 +1,70 @@
+.Board {
+    cursor: none;
+    width: 800px;
+    height: 800px;
+    border: 40px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px black;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: silver;
+    display: grid;
+    grid-template-columns: repeat(18, 40px);
+    grid-template-rows: repeat(18, 40px);
+}
+
+.Board .shadow {
+    grid-column: 1 / 18;
+    grid-row: 1 / 18;
+    width: 720px;
+    height: 720px;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+.Board .grid {
+    grid-column: 1 / 19;
+    grid-row: 1 / 19;
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px),
+                      linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+.specialSlot {
+    background-color: #999;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 39px;
+    height: 39px;
+}
+
+.Board .gameOver {
+    position:absolute;
+    line-height: 720px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 113px;
+    text-align: center;
+    text-shadow: 0px 0px 20px white, 0px 0px 40px white, 0px 0px 80px grey;
+    animation: gameOverAnimation .3s linear;
+}
+
+.gameOver:after {
+  content: 'GAME OVER!';
+}
+
+@keyframes gameOverAnimation{
+        0%{
+                opacity: 0;
+                transform: scale(10);
+        }
+        50% {
+                opacity: .5;
+                transform: scale(5);
+        }
+        100%{
+                opacity: 1;
+                transform: scale(1);
+        }
+}

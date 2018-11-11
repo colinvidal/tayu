@@ -1,0 +1,26 @@
+{
+   "doublesTop": [
+      { "gridColumn": 3, "gridRow": 1 },
+      { "gridColumn": 9, "gridRow": 1 },
+      { "gridColumn": 10, "gridRow": 1 },
+      { "gridColumn": 16, "gridRow": 1}
+   ],
+   "doublesBottom": [
+      { "gridColumn": 3, "gridRow": 18 },
+      { "gridColumn": 9, "gridRow": 18 },
+      { "gridColumn": 10, "gridRow": 18 },
+      { "gridColumn": 16, "gridRow": 18}
+   ],
+   "doublesLeft": [
+      { "gridColumn": 1, "gridRow": 3 },
+      { "gridColumn": 1, "gridRow": 9 },
+      { "gridColumn": 1, "gridRow": 10 },
+      { "gridColumn": 1, "gridRow": 16 }
+   ],
+   "doublesRight": [
+      { "gridColumn": 18, "gridRow": 3 },
+      { "gridColumn": 18, "gridRow": 9 },
+      { "gridColumn": 18, "gridRow": 10 },
+      { "gridColumn": 18, "gridRow": 16 }
+   ]
+}

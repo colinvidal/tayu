@@ -1,0 +1,60 @@
+.Piece {
+    background-color: #B2497D;
+    border-radius: 4px;
+    width: 40px;
+    height: 120px;
+    transition:
+        transform 200ms ease-in-out,
+        box-shadow 200ms ease-in-out;
+    box-shadow: 0px 0px 1px black;
+}
+
+.Piece.down {
+    margin-top: -40px;
+    margin-left: 40px;
+}
+
+.Piece.selected {
+    box-shadow: 0px 0px 40px black;
+}
+
+.Piece path {
+    stroke: white;
+    stroke-linejoin: round;
+    stroke-width: 4;
+    fill: transparent;
+    filter: drop-shadow(0px 0px 1px rgba(255,255,255,1.0));
+}
+
+@keyframes wrongPositionAnim {
+    0% { margin-left: 0px; }
+    25% { margin-left: -15px; }
+    50% { margin-left: 15px; }
+    100% { margin-left: 0px; }
+}
+
+@keyframes appearAnim {
+    0% {
+	opacity: 0.01;
+	margin-top: -25px;
+	transform: rotate(.1turn);
+    }
+    25% {
+	opacity: 0.25;
+	margin-top: -10px;
+	transform: rotate(.08turn);
+    }
+    50% {
+	opacity: 0.5;
+	margin-top: 0px;
+	transform: rotate(.06turn);
+    }
+    75% {
+	opacity: 0.75;
+	transform: rotate(.03turn);
+    }
+    100% {
+	opacity: 1;
+	transform: rotate(0turn);
+    }
+}
